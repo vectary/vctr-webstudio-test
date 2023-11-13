@@ -163,6 +163,16 @@ html {margin: 0; display: grid; min-height: 100%}
     outline-width: 1px;
     min-height: 1em
   }
+  a:where([data-ws-component="Link"]) {
+    box-sizing: border-box;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    outline-width: 1px;
+    min-height: 1em;
+    display: inline-block
+  }
   p:where([data-ws-component="Paragraph"]) {
     box-sizing: border-box;
     border-top-width: 1px;
@@ -178,16 +188,6 @@ html {margin: 0; display: grid; min-height: 100%}
     border-right-width: 1px;
     border-bottom-width: 1px;
     border-left-width: 1px
-  }
-  a:where([data-ws-component="Link"]) {
-    box-sizing: border-box;
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    outline-width: 1px;
-    min-height: 1em;
-    display: inline-block
   }
 }
 @media all {
@@ -399,6 +399,20 @@ html {margin: 0; display: grid; min-height: 100%}
     border-bottom-right-radius: 8px;
     color: rgba(255, 255, 255, 1)
   }
+  [data-ws-id="WPPbAudve_CpuGfOd3Cwu"] {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px
+  }
   [data-ws-id="QItzzEa6MPyeCOmP-aWsh"] {
     position: relative;
     background-attachment: scroll;
@@ -536,5 +550,29 @@ html {margin: 0; display: grid; min-height: 100%}
   }
   [data-ws-id="NuLLWk7Q9yjN435MsIlhJ"] {
     font-size: 12px
+  }
+  [data-ws-id="dUV_Q11tljBmnL7YOr6c7"] {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    object-fit: cover;
+    object-position: center center
+  }
+  [data-ws-id="HR9YW8PFwo9pHq8oomCJF"] {
+    display: flex
+  }
+  [data-ws-id="SXeFN9bFTlp-bYwuljs2U"] {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px
+  }
+  [data-ws-id="SXeFN9bFTlp-bYwuljs2U"]:hover {
+    width: 120%;
+    height: 120%
   }
 }

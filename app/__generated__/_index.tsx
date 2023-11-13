@@ -4,7 +4,8 @@
 import { type ReactNode, useState } from "react";
 import type { PageData } from "~/routes/_index";
 import type { Asset, ImageAsset, SiteMeta } from "@webstudio-is/sdk";
-import { Body as Body, Box as Box, Image as Image, Heading as Heading, Text as Text } from "@webstudio-is/sdk-components-react";
+import { Body as Body, Box as Box, Image as Image, Heading as Heading, Text as Text, HtmlEmbed as HtmlEmbed } from "@webstudio-is/sdk-components-react";
+import { Link as Link } from "@webstudio-is/sdk-components-react-remix";
 
 export const fontAssets: Asset[] = []
 export const imageAssets: ImageAsset[] = [{"id":"09a04c1e-28d3-4a28-ae61-6f1079a9c823","name":"card-get-started-icon-ar_1grSx8GEKfADhVrfxzQrS.svg","description":null,"projectId":"b35a1473-4ef1-4be3-93d2-30cf8d9ebf0f","size":2641,"type":"image","format":"svg","createdAt":"2023-11-13T12:40:51.697Z","meta":{"width":25,"height":28}}]
@@ -19,9 +20,13 @@ data-ws-component="Body">
 <Box
 data-ws-id="bsfj-Ov9S4dgAo-AB2EFF"
 data-ws-component="Box">
+<Link
+data-ws-id="HR9YW8PFwo9pHq8oomCJF"
+data-ws-component="Link">
 <Box
 data-ws-id="HY-Q9CE2YzismzGfMsPS6"
-data-ws-component="Box">
+data-ws-component="Box"
+tag={"nav"}>
 <Box
 data-ws-id="WPPbAudve_CpuGfOd3Cwu"
 data-ws-component="Box">
@@ -50,7 +55,20 @@ data-ws-component="Text">
 </Text>
 </Box>
 </Box>
+<Box
+data-ws-id="dUV_Q11tljBmnL7YOr6c7"
+data-ws-component="Box">
+<Box
+data-ws-id="SXeFN9bFTlp-bYwuljs2U"
+data-ws-component="Box">
+<HtmlEmbed
+data-ws-id="YlWkmTzVX7SDnpEluH0R9"
+data-ws-component="HtmlEmbed"
+code={"<script src=\"https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs\" type=\"module\"></script> \n    <dotlottie-player src=\"https://lottie.host/efa7ac28-cdab-45a5-84fb-70bf575af233/k5xHDk8V2v.lottie\" background=\"transparent\" speed=\"1\" style=\"position: absolute; width: 100%; height: 100%;\" loop=\"\" autoplay=\"\"></dotlottie-player>"} />
 </Box>
+</Box>
+</Box>
+</Link>
 <Box
 data-ws-id="5gsigEcOY_-7EEbTGL_ZU"
 data-ws-component="Box">
