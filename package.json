@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "start": "npx webstudio && remix-serve build && npm run build:static",
-    "build": "npx webstudio && remix build",
+    "start": "npm run build:static",
+    "build": "remix build",
     "dev": "remix dev",
     "typecheck": "tsc",
-    "build:static": "npx webstudio && remix build && remix-ssg public",
+    "sync": "npx webstudio && npx webstudio --assets",
+    "build:static": "npm run sync && remix build && remix-ssg public",
     "start:static": "serve -l 3000 public"
   },
   "private": true,
