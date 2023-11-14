@@ -1,16 +1,18 @@
 {
   "scripts": {
+    "predev": "node -e \"fs.rmSync('./public/_redirects', { recursive: true, force: true })\"",
     "start": "npm run build:static",
     "build": "remix build",
     "dev": "remix dev",
     "typecheck": "tsc",
     "sync": "npx webstudio && npx webstudio --assets",
-    "build:static": "npm run sync && remix build && remix-ssg public",
+    "build:static": "remix build && remix-ssg public",
     "start:static": "serve -l 3000 public"
   },
-  "private": true,
-  "sideEffects": false,
   "dependencies": {
+    "@netlify/functions": "^1.3.0",
+    "@netlify/edge-functions": "^2.0.0",
+    "@netlify/remix-edge-adapter": "1.2.0",
     "@remix-run/react": "^1.19.2",
     "@remix-run/server-runtime": "^1.19.2",
     "@remix-run/node": "^1.19.2",
@@ -27,6 +29,8 @@
     "add": "^2.0.6",
     "webstudio": "^0.118.0"
   },
+  "private": true,
+  "sideEffects": false,
   "devDependencies": {
     "@remix-run/serve": "^1.19.2",
     "@remix-run/dev": "^1.19.2",
