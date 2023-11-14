@@ -131,7 +131,7 @@ href={"#"}>
 export { Page }
 
 
-  export const pagesPaths = new Set(["","/ai-test"])
+  export const pagesPaths = new Set(["","/ai-test","/404"])
 
   export const formsProperties = new Map<string, { method?: string, action?: string }>([])
   

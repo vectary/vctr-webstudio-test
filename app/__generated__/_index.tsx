@@ -5,7 +5,6 @@ import { type ReactNode, useState } from "react";
 import type { PageData } from "~/routes/_index";
 import type { Asset, ImageAsset, SiteMeta } from "@webstudio-is/sdk";
 import { Body as Body, Box as Box, Image as Image, Heading as Heading, Text as Text, HtmlEmbed as HtmlEmbed } from "@webstudio-is/sdk-components-react";
-import { Link as Link } from "@webstudio-is/sdk-components-react-remix";
 
 export const fontAssets: Asset[] = []
 export const imageAssets: ImageAsset[] = [{"id":"09a04c1e-28d3-4a28-ae61-6f1079a9c823","name":"card-get-started-icon-ar_1grSx8GEKfADhVrfxzQrS.svg","description":null,"projectId":"b35a1473-4ef1-4be3-93d2-30cf8d9ebf0f","size":2641,"type":"image","format":"svg","createdAt":"2023-11-13T12:40:51.697Z","meta":{"width":25,"height":28}}]
@@ -20,9 +19,6 @@ data-ws-component="Body">
 <Box
 data-ws-id="bsfj-Ov9S4dgAo-AB2EFF"
 data-ws-component="Box">
-<Link
-data-ws-id="HR9YW8PFwo9pHq8oomCJF"
-data-ws-component="Link">
 <Box
 data-ws-id="HY-Q9CE2YzismzGfMsPS6"
 data-ws-component="Box"
@@ -46,7 +42,7 @@ data-ws-component="Box">
 <Heading
 data-ws-id="ozKmRy31ahKcmXaP4RkZO"
 data-ws-component="Heading">
-{"Augmented Reality"}
+{"Share & Embed"}
 </Heading>
 <Text
 data-ws-id="iBmoU8Th7AZbOYQrVVif8"
@@ -68,7 +64,6 @@ code={"<script src=\"https://unpkg.com/@dotlottie/player-component@latest/dist/d
 </Box>
 </Box>
 </Box>
-</Link>
 <Box
 data-ws-id="5gsigEcOY_-7EEbTGL_ZU"
 data-ws-component="Box">
@@ -174,7 +169,7 @@ data-ws-component="Text">
 export { Page }
 
 
-  export const pagesPaths = new Set(["","/ai-test"])
+  export const pagesPaths = new Set(["","/ai-test","/404"])
 
   export const formsProperties = new Map<string, { method?: string, action?: string }>([])
   
