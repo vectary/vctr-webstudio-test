@@ -9,5 +9,9 @@ export const imageBaseUrl = "/assets/";
  * @type {import("@webstudio-is/image").ImageLoader}
  */
 export const imageLoader = ({ src }) => {
-  return imageBaseUrl + src;
+	return imageBaseUrl + src;
 };
+
+export function getStaticPaths() {
+	return ["/", "/404", "/ai-test"];
+}
