@@ -6,9 +6,10 @@
     "typecheck": "tsc",
     "predev": "node -e \"fs.rmSync('./public/_redirects', { recursive: true, force: true })\"",
     "sync": "npx webstudio && npx webstudio --assets",
-    "build:static": "npm run clean && npm run sync && remix build && remix-ssg public",
+    "build:static": "npm run clean && npm run sync && npm run update:scripts && remix build && remix-ssg public",
     "start:static": "serve -l 3000 public",
-    "clean": "rm -rf public || true"
+    "clean": "rm -rf public || true",
+    "update:scripts": "make update-scripts"
   },
   "private": true,
   "sideEffects": false,
